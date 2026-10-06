@@ -6,7 +6,7 @@ A hardware-based RFID access control system developed using an **ESP32** and **R
 
 ## Hardware Setup
 
-![ESP32 RFID Hardware Setup](rfid-hardware.jpg)
+![ESP32 RFID Hardware Setup](./rfid-hardware.jpg)
 
 ## Features
 
