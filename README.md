@@ -37,10 +37,10 @@ The RC522 is interfaced with the ESP32 using SPI communication.
 
 Main SPI signals:
 
-* SCK — Serial Clock
-* MOSI — Master Out Slave In
-* MISO — Master In Slave Out
-* SS/CS — Slave Select / Chip Select
+* **SCK** — Serial Clock
+* **MOSI** — Master Out Slave In
+* **MISO** — Master In Slave Out
+* **SS/CS** — Slave Select / Chip Select
 
 ## Working Principle
 
@@ -65,29 +65,32 @@ Main SPI signals:
 | MISO      | GPIO 19 |
 | RST       | GPIO 22 |
 
-> Verify the GPIO numbers above against the actual wiring and firmware before finalizing the repository.
+> Verify these GPIO numbers against your actual hardware wiring and Arduino code before finalizing the repository.
 
 ## Software
 
 * Arduino IDE
 * ESP32 Board Package
-* RC522/MFRC522 RFID Library
+* MFRC522 RFID Library
 
 ## Testing
 
-The system was physically assembled and tested using an ESP32, RC522 RFID reader and RFID card. RFID card detection and UID-based access decisions were verified using the Serial Monitor and LED status indication.
+The system was physically assembled and tested using an ESP32, RC522 RFID reader, RFID card and LED indicator.
+
+RFID card detection and UID-based access decisions were verified using the Serial Monitor and LED status indication.
+
+## Project Structure
+
+```text
+ESP32-RFID-Access-Control-System/
+│
+├── ESP32-RFID-Access-Control-System.ino
+├── rfid-hardware.jpg
+└── README.md
+```
 
 ## Limitations
 
-This project implements basic UID-based authorization for demonstration and learning purposes. UID comparison alone should not be considered a high-security authentication mechanism.
+This project implements basic UID-based authorization for demonstration and learning p
 
-## Future Improvements
-
-* Support multiple authorized cards
-* Store authorized UIDs in non-volatile memory
-* Add buzzer or display
-* Add relay/door-lock control
-* Add access logging
-* Implement stronger authentication and secure credential management
-* Use ESP32 Wi-Fi for remote access monitoring
 
