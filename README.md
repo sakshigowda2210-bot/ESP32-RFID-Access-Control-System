@@ -4,6 +4,10 @@
 
 A hardware-based RFID access control system developed using an **ESP32** and **RC522 RFID reader**. The RC522 communicates with the ESP32 through **SPI**, and the system identifies RFID cards using their UID and provides access status through an LED indicator.
 
+## Hardware Setup
+
+![RFID Hardware Setup](rfid_hardwrae.jpeg)
+
 ## Features
 
 * RFID card detection using RC522
